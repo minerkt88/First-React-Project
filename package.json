@@ -9,6 +9,7 @@
   "author": "Kyle Miner",
   "license": "ISC",
   "dependencies": {
+    "mem": "^5.1.1",
     "react": "^15.6.2",
     "react-dom": "^15.5.4"
   },

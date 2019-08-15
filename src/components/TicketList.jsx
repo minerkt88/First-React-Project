@@ -3,7 +3,10 @@ import Ticket from './Ticket';
 
 const TicketList = () => {
     return (
-        <Ticket/>
+        <Ticket
+            location = '3A'
+            names = 'Tim and Eric'
+            issue = 'Brownie Mountain'/>
     );
 }
 

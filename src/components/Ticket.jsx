@@ -1,12 +1,19 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const Ticket = () => {
+const Ticket = props => {
     return (
         <div>
-            <h3>3A - Tim and Eric</h3>
-            <p>No more brownies!</p>
+            <h3>{props.location} - {props.names}</h3>
+            <p>{props.issue}</p>
         </div>
-    )
+    );
 }
 
-export default Ticket
+Ticket.propTypes = {
+    location: PropTypes.string.isRequired,
+    names: PropTypes.string.isRequired,
+    issue: PropTypes.string
+};
+
+export default Ticket;
